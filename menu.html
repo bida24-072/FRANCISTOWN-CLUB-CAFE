@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | City Club Cafe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">CITY CLUB</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="vip.html">VIP Booking</a>
+            <a href="vip.html" class="btn-nav">Book a Table</a>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>The Menu</h1>
+        <p>Flame-grilled perfection, signature cocktails, and sweet treats.</p>
+    </div>
+
+    <section class="menu-section">
+        <div class="menu-grid">
+            <!-- Grill -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Signature T-Bone</h3>
+                    <p>500g flame-grilled steak, served with rustic chips and our house sauce.</p>
+                    <div class="price-row">
+                        <span class="price">P 180</span>
+                        <button class="order-btn" onclick="orderItem('Signature T-Bone', '180')">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cocktails -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Francistown Sunset</h3>
+                    <p>Our signature cocktail. Dark rum, passionfruit, and a splash of grenadine.</p>
+                    <div class="price-row">
+                        <span class="price">P 75</span>
+                        <button class="order-btn" onclick="orderItem('Francistown Sunset Cocktail', '75')">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cakes -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Red Velvet VIP Cake</h3>
+                    <p>Whole celebration cake. Pre-order for your table and we'll add sparklers.</p>
+                    <div class="price-row">
+                        <span class="price">P 350</span>
+                        <button class="order-btn" onclick="orderItem('Red Velvet VIP Cake (Pre-order)', '350')">Pre-Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shisha -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1579307140762-11604b3154b4?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Premium Shisha</h3>
+                    <p>Double Apple, Mint, or Watermelon. Served in our VIP lounge area.</p>
+                    <div class="price-row">
+                        <span class="price">P 120</span>
+                        <button class="order-btn" onclick="orderItem('Premium Shisha', '120')">Order</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Platters -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Club VIP Platter</h3>
+                    <p>Wings, ribs, samosas, and loaded fries. Perfect for the table.</p>
+                    <div class="price-row">
+                        <span class="price">P 250</span>
+                        <button class="order-btn" onclick="orderItem('Club VIP Platter', '250')">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>City Club Cafe</h2>
+        <p>Behind Nyangabwe Hospital, Francistown, Botswana</p>
+    </footer>
+
+    <a href="https://wa.me/267XXXXXXXXX" target="_blank" class="floating-wa">
+        <svg viewBox="0 0 32 32" width="35" height="35" fill="currentColor"><path d="M16 0A16 16 0 0 0 0 16c0 2.8.7 5.5 2 7.8L0 32l8.4-2.2A15.9 15.9 0 0 0 16 32a16 16 0 0 0 16-16A16 16 0 0 0 16 0z"/></svg>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
