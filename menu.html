@@ -26,7 +26,8 @@
 
     <section class="menu-section">
         <div class="menu-grid">
-            <!-- Grill -->
+            
+            <!-- 1. GRILL -->
             <div class="menu-card">
                 <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop');"></div>
                 <div class="menu-info">
@@ -39,7 +40,33 @@
                 </div>
             </div>
 
-            <!-- Cocktails -->
+            <!-- 2. GRILL -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Sticky BBQ Pork Ribs</h3>
+                    <p>Slow-cooked ribs glazed in a smoky barbecue sauce, served with fries.</p>
+                    <div class="price-row">
+                        <span class="price">P 160</span>
+                        <button class="order-btn" onclick="orderItem('Sticky BBQ Pork Ribs', '160')">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. PLATTER -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Club VIP Platter</h3>
+                    <p>Wings, ribs, samosas, and loaded fries. Perfect for sharing at the table.</p>
+                    <div class="price-row">
+                        <span class="price">P 250</span>
+                        <button class="order-btn" onclick="orderItem('Club VIP Platter', '250')">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. COCKTAIL -->
             <div class="menu-card">
                 <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800&auto=format&fit=crop');"></div>
                 <div class="menu-info">
@@ -52,7 +79,59 @@
                 </div>
             </div>
 
-            <!-- Cakes -->
+            <!-- 5. COCKTAIL -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1551538827-9c037cb4f32a?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Classic Mojito</h3>
+                    <p>Fresh mint, lime, white rum, and soda. Refreshing and perfectly balanced.</p>
+                    <div class="price-row">
+                        <span class="price">P 65</span>
+                        <button class="order-btn" onclick="orderItem('Classic Mojito', '65')">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. BOTTLE SERVICE -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1569924995012-c4c706bfcd51?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Hennessy VS VIP Bottle</h3>
+                    <p>Full bottle of Hennessy VS served with your choice of mixers and ice.</p>
+                    <div class="price-row">
+                        <span class="price">P 1,200</span>
+                        <button class="order-btn" onclick="orderItem('Hennessy VS VIP Bottle', '1200')">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. SHISHA -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1579307140762-11604b3154b4?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Premium Shisha</h3>
+                    <p>Double Apple, Mint, or Watermelon. Served with premium coals in the lounge.</p>
+                    <div class="price-row">
+                        <span class="price">P 120</span>
+                        <button class="order-btn" onclick="orderItem('Premium Shisha', '120')">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. SHISHA -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1579307140762-11604b3154b4?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Exotic Shisha Mix</h3>
+                    <p>Ask our shisha master for a custom mix of tropical fruits and mint.</p>
+                    <div class="price-row">
+                        <span class="price">P 150</span>
+                        <button class="order-btn" onclick="orderItem('Exotic Shisha Mix', '150')">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. CAKES -->
             <div class="menu-card">
                 <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop');"></div>
                 <div class="menu-info">
@@ -65,37 +144,52 @@
                 </div>
             </div>
 
-            <!-- Shisha -->
+            <!-- 10. DESSERT -->
             <div class="menu-card">
-                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1579307140762-11604b3154b4?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=800&auto=format&fit=crop');"></div>
                 <div class="menu-info">
-                    <h3>Premium Shisha</h3>
-                    <p>Double Apple, Mint, or Watermelon. Served in our VIP lounge area.</p>
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Warm chocolate cake with a molten center, served with vanilla ice cream.</p>
+                    <div class="price-row">
+                        <span class="price">P 80</span>
+                        <button class="order-btn" onclick="orderItem('Chocolate Lava Cake', '80')">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. STARTER -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1582169296194-e4d644c48063?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Loaded Beef Nachos</h3>
+                    <p>Crispy tortilla chips loaded with minced beef, cheese, jalapeños, and salsa.</p>
+                    <div class="price-row">
+                        <span class="price">P 90</span>
+                        <button class="order-btn" onclick="orderItem('Loaded Beef Nachos', '90')">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. MAINS -->
+            <div class="menu-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="menu-info">
+                    <h3>Peri-Peri Half Chicken</h3>
+                    <p>Flame-grilled half chicken basted in our spicy peri-peri sauce.</p>
                     <div class="price-row">
                         <span class="price">P 120</span>
-                        <button class="order-btn" onclick="orderItem('Premium Shisha', '120')">Order</button>
+                        <button class="order-btn" onclick="orderItem('Peri-Peri Half Chicken', '120')">Order</button>
                     </div>
                 </div>
             </div>
-            
-            <!-- Platters -->
-            <div class="menu-card">
-                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop');"></div>
-                <div class="menu-info">
-                    <h3>Club VIP Platter</h3>
-                    <p>Wings, ribs, samosas, and loaded fries. Perfect for the table.</p>
-                    <div class="price-row">
-                        <span class="price">P 250</span>
-                        <button class="order-btn" onclick="orderItem('Club VIP Platter', '250')">Order</button>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
 
     <footer>
         <h2>City Club Cafe</h2>
         <p>Behind Nyangabwe Hospital, Francistown, Botswana</p>
+        <p style="margin-top: 10px; color: var(--gold);">Open: Tue - Sun | 12:00 PM - Late</p>
     </footer>
 
     <a href="https://wa.me/267XXXXXXXXX" target="_blank" class="floating-wa">
