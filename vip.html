@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Booking | City Club Cafe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">CITY CLUB</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="vip.html" class="active">VIP Booking</a>
+            <a href="vip.html" class="btn-nav">Book a Table</a>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>Reserve Your Spot</h1>
+        <p>Skip the line. Book your VIP table for Posh Fridays and Sundowner Saturdays.</p>
+    </div>
+
+    <section class="menu-section">
+        <div class="vip-form-container">
+            <form onsubmit="bookVIP(event)">
+                <label style="display:block; margin-bottom:10px; color:var(--gold);">Full Name</label>
+                <input type="text" id="vip-name" placeholder="e.g. John Doe" required>
+
+                <label style="display:block; margin-bottom:10px; color:var(--gold);">Date of Visit</label>
+                <input type="date" id="vip-date" required>
+
+                <label style="display:block; margin-bottom:10px; color:var(--gold);">Number of Guests</label>
+                <select id="vip-guests" required>
+                    <option value="2">2 People (Standard Table)</option>
+                    <option value="4">4 People (Premium Table)</option>
+                    <option value="6">6+ People (VIP Booth)</option>
+                </select>
+
+                <button type="submit">Request Booking via WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <h2>City Club Cafe</h2>
+        <p>Behind Nyangabwe Hospital, Francistown, Botswana</p>
+    </footer>
+
+    <a href="https://wa.me/267XXXXXXXXX" target="_blank" class="floating-wa">
+        <svg viewBox="0 0 32 32" width="35" height="35" fill="currentColor"><path d="M16 0A16 16 0 0 0 0 16c0 2.8.7 5.5 2 7.8L0 32l8.4-2.2A15.9 15.9 0 0 0 16 32a16 16 0 0 0 16-16A16 16 0 0 0 16 0z"/></svg>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
